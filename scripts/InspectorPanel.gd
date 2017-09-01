@@ -21,6 +21,9 @@ func _on_node_selected(node):
 	#Clear member lists
 	for memTextEdit in memberTextEditList:
 		remove_child(memTextEdit)
+	memberList.clear()
+	memberTextEditList.clear()
+	
 	
 	var pos = Vector2(5,150);
 	for child in node.get_children():
@@ -38,6 +41,7 @@ func _on_node_selected(node):
 	for i in memberList:
 		memberTextEditList[index].set_text(i.get_text())
 		index += 1
+	print("Member List Contains: " + str(memberList.size()))
 	
 
 func _on_MemberTextEdit_text_changed():

@@ -18,6 +18,10 @@ func _on_node_selected(node):
 	curNode = node;
 	classNameTextEdit.set_text(curNode.get_title())
 	
+	#Clear member lists
+	for memTextEdit in memberTextEditList:
+		remove_child(memTextEdit)
+	
 	var pos = Vector2(5,150);
 	for child in node.get_children():
 		print(child.get_text())
@@ -54,4 +58,4 @@ func _on_MemberAddButton_pressed():
 	member.set_align(HALIGN_CENTER)
 	curNode.add_child(member)
 	_on_node_selected(curNode)
-	pass # replace with function body
+	memberTextEditList.back().grab_focus()

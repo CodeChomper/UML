@@ -126,9 +126,9 @@ focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
-margin/left = 38.0
+margin/left = 48.0
 margin/top = 124.0
-margin/right = 194.0
+margin/right = 182.0
 margin/bottom = 138.0
 text = "Members"
 align = 1
@@ -160,9 +160,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 3.0
-margin/top = 95.0
+margin/top = 109.0
 margin/right = 229.0
-margin/bottom = 135.0
+margin/bottom = 115.0
 
 [node name="HSeparator1" type="HSeparator" parent="GUI/InspectorPanel"]
 
@@ -171,9 +171,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 3.0
-margin/top = 37.0
+margin/top = 50.0
 margin/right = 229.0
-margin/bottom = 77.0
+margin/bottom = 57.0
 
 [connection signal="pressed" from="GUI/InspectorPanel/NewClassButton" to="GUI/InspectorPanel" method="_on_NewClassButton_pressed"]
 

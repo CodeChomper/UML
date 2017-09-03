@@ -24,7 +24,7 @@ func _on_node_selected(node):
 	memberList.clear()
 	memberTextEditList.clear()
 	
-	var pos = Vector2(5,150);
+	var pos = Vector2(15,150);
 	for child in node.get_children():
 		print(child.get_text())
 		memberList.append(child)

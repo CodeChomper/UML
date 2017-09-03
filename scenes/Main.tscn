@@ -48,7 +48,7 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 241.0
+margin/left = 260.0
 margin/top = 1.0
 margin/right = 12.0
 margin/bottom = 12.0
@@ -61,14 +61,48 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 161.0
-margin/top = 14.0
-margin/right = 162.0
-margin/bottom = 41.0
+margin/left = 239.0
+margin/top = 12.0
+margin/right = 86.0
+margin/bottom = 39.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 text = "New Class"
+flat = false
+
+[node name="DisconnectButton" type="Button" parent="GUI/InspectorPanel"]
+
+anchor/left = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 152.0
+margin/top = 12.0
+margin/right = 180.0
+margin/bottom = 39.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Disconnect"
+flat = false
+
+[node name="DisconnectButton1" type="Button" parent="GUI/InspectorPanel"]
+
+anchor/left = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 61.0
+margin/top = 12.0
+margin/right = 242.0
+margin/bottom = 39.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Delete"
 flat = false
 
 [node name="ClassNameLabel" type="Label" parent="GUI/InspectorPanel"]
@@ -77,9 +111,9 @@ focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
-margin/left = 4.0
+margin/left = 14.0
 margin/top = 64.0
-margin/right = 83.0
+margin/right = 93.0
 margin/bottom = 78.0
 text = "Class Name:"
 percent_visible = 1.0
@@ -92,9 +126,9 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 7.0
+margin/left = 17.0
 margin/top = 83.0
-margin/right = 224.0
+margin/right = 234.0
 margin/bottom = 107.0
 syntax_highlighting = false
 show_line_numbers = false
@@ -128,7 +162,7 @@ size_flags/horizontal = 2
 size_flags/vertical = 0
 margin/left = 48.0
 margin/top = 124.0
-margin/right = 182.0
+margin/right = 203.0
 margin/bottom = 138.0
 text = "Members"
 align = 1
@@ -142,9 +176,9 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 203.0
+margin/left = 217.0
 margin/top = 124.0
-margin/right = 219.0
+margin/right = 233.0
 margin/bottom = 140.0
 toggle_mode = false
 enabled_focus_mode = 2
@@ -161,8 +195,8 @@ size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 3.0
 margin/top = 109.0
-margin/right = 229.0
-margin/bottom = 115.0
+margin/right = 246.0
+margin/bottom = 116.0
 
 [node name="HSeparator1" type="HSeparator" parent="GUI/InspectorPanel"]
 
@@ -172,7 +206,7 @@ size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 3.0
 margin/top = 50.0
-margin/right = 229.0
+margin/right = 245.0
 margin/bottom = 57.0
 
 [connection signal="pressed" from="GUI/InspectorPanel/NewClassButton" to="GUI/InspectorPanel" method="_on_NewClassButton_pressed"]

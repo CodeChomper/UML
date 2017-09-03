@@ -24,7 +24,6 @@ func _on_node_selected(node):
 	memberList.clear()
 	memberTextEditList.clear()
 	
-	
 	var pos = Vector2(5,150);
 	for child in node.get_children():
 		print(child.get_text())
@@ -36,7 +35,7 @@ func _on_node_selected(node):
 		memberTextEditList.append(tb)
 		pos.y += 25
 		self.add_child(tb)
-	
+
 	var index = 0
 	for i in memberList:
 		memberTextEditList[index].set_text(i.get_text())
@@ -55,11 +54,18 @@ func _on_ClassNameTextEdit_text_changed():
 	pass # replace with function body
 
 func _on_NewClassButton_pressed():
-	graphEdit._on_create_graph_node()
+	var pos = Vector2(0,100)
+	if curNode == null:
+		pos.x += 100
+	else:
+		pos = curNode.get_pos()
+		pos.x += 175
+	graphEdit._on_create_graph_node(pos)
 
 func _on_MemberAddButton_pressed():
-	var member = Label.new()
-	member.set_align(HALIGN_CENTER)
-	curNode.add_child(member)
-	_on_node_selected(curNode)
-	memberTextEditList.back().grab_focus()
+	if curNode != null:
+		var member = Label.new()
+		member.set_align(HALIGN_CENTER)
+		curNode.add_child(member)
+		_on_node_selected(curNode)
+		memberTextEditList.back().grab_focus()

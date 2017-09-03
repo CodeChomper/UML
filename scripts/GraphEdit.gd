@@ -33,6 +33,8 @@ func _on_GraphEdit_disconnection_request( from, from_slot, to, to_slot ):
 	self.disconnect_node(from,from_slot,to,to_slot)
 	pass # replace with function body
 
-func _on_create_graph_node():
+func _on_create_graph_node(pos):
 	var newNode = graphNode.instance()
+	newNode.set_offset(pos)
+	print(pos)
 	add_child(newNode)

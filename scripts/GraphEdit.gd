@@ -8,6 +8,7 @@ func _ready():
 	connect("connection_request",self,"_on_GraphEdit_connection_request")
 	connect("disconnection_request",self,"_on_GraphEdit_disconnection_request")
 	connect("window_resized",self,"_on_window_resized")
+	self.set_right_disconnects(true)
 	set_process(true)
 	pass
 

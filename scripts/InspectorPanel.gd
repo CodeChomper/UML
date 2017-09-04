@@ -50,8 +50,8 @@ func _on_MemberTextEdit_text_changed():
 		index += 1
 
 func _on_ClassNameTextEdit_text_changed():
-	curNode.set_title(classNameTextEdit.get_text())
-	pass # replace with function body
+	if curNode != null:
+		curNode.set_title(classNameTextEdit.get_text())
 
 func _on_NewClassButton_pressed():
 	var pos = Vector2(0,100)

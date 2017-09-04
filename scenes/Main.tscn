@@ -71,23 +71,6 @@ shortcut = null
 text = "New Class"
 flat = false
 
-[node name="DisconnectButton" type="Button" parent="GUI/InspectorPanel"]
-
-anchor/left = 1
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 152.0
-margin/top = 12.0
-margin/right = 180.0
-margin/bottom = 39.0
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-text = "Disconnect"
-flat = false
-
 [node name="DisconnectButton1" type="Button" parent="GUI/InspectorPanel"]
 
 anchor/left = 1

@@ -198,4 +198,6 @@ margin/bottom = 57.0
 
 [connection signal="pressed" from="GUI/InspectorPanel/MemberAddButton" to="GUI/InspectorPanel" method="_on_MemberAddButton_pressed"]
 
+[connection signal="pressed" from="GUI/InspectorPanel/MemberRemoveButton" to="GUI/InspectorPanel" method="_on_MemberRemoveButton_pressed"]
+
 

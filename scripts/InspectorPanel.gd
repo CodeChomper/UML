@@ -61,6 +61,7 @@ func _on_NewClassButton_pressed():
 		pos = curNode.get_pos()
 		pos.x += 175
 	graphEdit._on_create_graph_node(pos)
+	classNameTextEdit.grab_focus()
 
 func _on_MemberAddButton_pressed():
 	if curNode != null:
@@ -69,3 +70,12 @@ func _on_MemberAddButton_pressed():
 		curNode.add_child(member)
 		_on_node_selected(curNode)
 		memberTextEditList.back().grab_focus()
+
+func _on_MemberRemoveButton_pressed():
+	if curNode != null and memberList.size() > 0 and memberTextEditList.size() > 0:
+		var memb = memberList.back()
+		memberList.pop_back()
+		curNode.remove_child(memb)
+		var membTextEdit = memberTextEditList.back()
+		memberTextEditList.pop_back()
+		self.remove_child(membTextEdit)

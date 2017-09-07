@@ -39,3 +39,4 @@ func _on_create_graph_node(pos):
 	newNode.set_offset(pos)
 	print(pos)
 	add_child(newNode)
+	newNode._on_GraphNode_raise_request()
